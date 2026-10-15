@@ -1,0 +1,23 @@
+{
+  "name": "calico-ca",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5176",
+    "build": "vite build",
+    "test": "node tests/smoke.mjs && node tests/extended.mjs"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.0",
+    "dompurify": "^3.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest"
+  }
+}
